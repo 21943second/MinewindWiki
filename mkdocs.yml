@@ -1,0 +1,49 @@
+site_name: Minewind Wiki
+site_url: https://sitename.example
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/wind
+  favicon: assets/wind-solid-full.svg
+  features:
+    - navigation.footer
+  palette: 
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: deep purple
+      accent: green
+  
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: deep purple
+      accent: green
+
+markdown_extensions:
+  - attr_list
+  # Support for emojis, which can be searched through at the link below
+  # https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Support for tabs (and custom diagrams)
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Support for 'callouts'
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: simple/discord
+      link: https://discord.gg/DepcKjZQnp
