@@ -42,6 +42,15 @@ Item Type: {{ item["item_type"] }}
   Date: {{ item["date"] }}
 {% endif %}
 
+{% if item.worn_effects is defined %}
+{% for worn_effect in item["worn_effects"] %}
+{{ worn_effect["name"] }}
+{% for effect in worn_effect["effects"] %}
+- {{ effect }}
+{% endfor %}
+{% endfor %}
+{% endif %}
+
 {% if item.enchantments is defined %}
 
 Enchantments:
