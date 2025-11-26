@@ -1,0 +1,15 @@
+{
+    "name": "Angry Broom",
+    "image": "angry-broom.webp",
+    "item_type": "wheat",
+    "enchantments": [
+        {
+            "name": "sharpness",
+            "level": "25",
+            "hidden": ""
+        }
+    ],
+    "lore": [
+        "Sweeps bugs like flies"
+    ]
+}

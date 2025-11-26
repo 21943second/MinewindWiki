@@ -13,21 +13,5 @@ The Prison Shank was a [[mythical]] Flint, [[angry-broom]] and Prison Shank were
 
 ## Item Info
 
-{%
-    set prison_shank = {
-        "name": "Prison Shank",
-        "image": "prison-shank.webp",
-        "item_type": "flint",
-        "enchantments": [
-            {
-                "name": "sharpness",
-                "level": "25",
-                "hidden": "",
-            },
-        ],
-        "lore": ["Sharp as fuck"],
-    }
-%}
-
-{% set item = prison_shank %}
+{% set item = read_json('include/data/prison-shank.json') %}
 {% include 'templates/item.md' %}

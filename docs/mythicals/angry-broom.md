@@ -12,21 +12,5 @@ The Angry broom is a [[mythical]] Wheat, Angry Broom and [[prison-shank]] were g
 
 ## Item Info
 
-{%
-    set angry_broom = {
-        "name": "Angry Broom",
-        "image": "angry-broom.webp",
-        "item_type": "wheat",
-        "enchantments": [
-            {
-                "name": "sharpness",
-                "level": "25",
-                "hidden": "",
-            },
-        ],
-        "lore": ["Sweeps bugs like flies"],
-    }
-%}
-
-{% set item = angry_broom %}
+{% set item = read_json('include/data/angry-broom.json') %}
 {% include 'templates/item.md' %}
