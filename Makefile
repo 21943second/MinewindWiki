@@ -2,4 +2,4 @@ setup:
 	python -m venv venv && ./venv/bin/pip install -r requirements.txt
 
 serve:
-	./venv/bin/mkdocs serve --livereload
+	./venv/bin/mkdocs serve --livereload -w include

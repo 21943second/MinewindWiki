@@ -1,3 +1,9 @@
+---
+tags:
+  - minewind
+  - players
+---
+
 # Diagram Example
 
 ## Flowcharts

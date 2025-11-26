@@ -1,5 +1,6 @@
 site_name: Minewind Wiki
-site_url: https://sitename.example
+site_url: https://21943second.github.io/MinewindWiki/
+repo_url: https://github.com/21943second/MinewindWiki
 theme:
   name: material
   icon:
@@ -24,6 +25,16 @@ theme:
       primary: deep purple
       accent: green
 
+# Choose what shows up in global navigation
+#nav:
+#  - Home: index.md
+#  - User Guide:
+#    - Writing your docs: writing-your-docs.md
+#    - Styling your docs: styling-your-docs.md
+#  - About:
+#    - License: license.md
+#    - Release Notes: release-notes.md
+
 markdown_extensions:
   - attr_list
   # Support for emojis, which can be searched through at the link below
@@ -42,6 +53,19 @@ markdown_extensions:
   # Support for 'callouts'
   - admonition
   - pymdownx.details
+  # Better image functionality
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - tags
+  - search
+  - alias
+  - site-urls
+  - macros:
+      include_dir: include
+  - autorefs:
+      resolve_closest: true
 
 extra:
   social:

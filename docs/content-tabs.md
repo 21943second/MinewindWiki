@@ -1,3 +1,8 @@
+---
+tags:
+  - players
+---
+
 ## Content Tabs
 
 This is some examples of content tabs.
